@@ -1,0 +1,61 @@
+body {
+  background:black;
+}
+
+
+.skyblue {
+  background: black;
+}
+
+.box{
+  padding: 10px;
+  background:rgb(211, 4, 211);
+  align-content: center;
+  text-align: center;
+  color: whitesmoke;
+}
+
+
+.navbar {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 25px;
+  background:rgb(70, 6, 70);
+}
+
+.navbar li {
+  display: d-block;
+  padding: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+  cursor: pointer;
+  align-content: center;
+  text-align: center;
+  color: whitesmoke;
+  
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 20px;
+}
+
+
+p{
+    font-size: 20px;
+}
+
+
+.c-d{color:rgb(252, 221, 221);
+  font-size: 25px;
+}
+
+.latitude {
+  color: whitesmoke;
+  font-family: verdana;
+  font-size: 40px;
+  background-color:rgb(121, 17, 121);
+  border: 1px solid rgb(58, 4, 59);
+    padding: 15px;
+}

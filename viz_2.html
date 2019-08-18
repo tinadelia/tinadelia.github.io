@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Web_Viz</title>
+        <title>Humidity</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css">
       </head>
 
-</head>   
+</head>  
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-inverse">
@@ -45,42 +45,40 @@
                 </ul>
             </div>
         </nav>
-        
-        <div class="content">
+	   
+	    <div class="content">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-12 col-md-8">
                         <div class="box">
-                            <div class="page-header">
-                                <h1 class="title">Summary: Latitude vs. X</h1>
+                            <div class="header">
+                                <h1 class="title">Humidity</h1>
                             </div>
-                            <div class="box">
-                                <img src="./Resources/City_Latitude_vs_Max_Temperature.png" alt="Latitude vs. Max Temperature" height="280" width="280" alignment="left">
-                                <p class="category">  The purpose of this project was to create visualizations of the weather in 500+ cities across the world of varying distance from the equator, to showcase the following relationships: Temperature (F) vs. Latitude, Humidity (%) vs. Latitude, Cloudiness (%) vs. Latitude and Wind Speed (mph) vs. Latitude. 
-                                </p>
-                                <p class="category">  The dataset was assembled of unique cities based on latitude and longitude. A weather check was done on each of the cities using a series of API calls through the OpenWeatherMap API. The data tab provides the source data including City, Cloudiness, Country, Date, Humidity, Latitude, Longitude, Max Temp and Wind Speed. The visualizations were created as part of the analysis using Pythons Matplotlib library, each scatterplot showcasing the results can be found in the plots tab with descriptions of trends, correlations and significance. The comparisons tab also contains all of the scatterplots on the same page so they can be easily compared visually.
-                                </p>
+                            <div class="content">
+                               <img src="./Resources/City_Latitude_vs_Humidity.png" alt="Latitude vs. Humidity" class="img-responsive">
+	                           <p class="category">The amount of water vapor in the air is referred to as humidity. Latitude does not seem to bring about a high degree of change in relative humidity. However, temperature may have a correlation to the rise in humidity most likely due to the fact that warm air can hold more moisture than cold air.
+	                           </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-md-4">
                         <div class="box">
-                            <div class="page-header">
+                            <div class="header">
                                 <h1 class="title">Visualizations</h1>
                             </div>
-                            <div class="box">
-                               <a href="./viz_1.html"><img src="./Resources/City_Latitude_vs_Max_Temperature.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
-                               <a href="./viz_2.html"><img src="./Resources/City_Latitude_vs_Humidity.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
-                               <a href="./viz_3.html"><img src="./Resources/City_Latitude_vs_Cloudiness.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
-                               <a href="./viz_4.html"><img src="./Resources/City_Latitude_vs_Wind_Speed.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <div class="content">
+                                <a href="./viz_1.html"><img src="./Resources/City_Latitude_vs_Max_Temperature.png" alt="Latitude vs. Max Temperature" height="160" width="160"></a>
+                                <a href="./viz_2.html"><img src="./Resources/City_Latitude_vs_Humidity.png" alt="Latitude vs. Humidity" height="160" width="160"></a>
+                                <a href="./viz_3.html"><img src="./Resources/City_Latitude_vs_Cloudiness.png" alt="Latitude vs. Cloudiness" height="160" width="160"></a>
+                                <a href="./viz_4.html"><img src="./Resources/City_Latitude_vs_Wind_Speed.png" alt="Latitude vs. Wind Speed" height="160" width="160"></a>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+			</div>
+		</div>
     </div>
 </body>
 
-</html>
+</html> 
