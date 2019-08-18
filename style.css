@@ -59,3 +59,36 @@ p{
   border: 1px solid rgb(58, 4, 59);
     padding: 15px;
 }
+
+@media (max-width: 400px) {
+  .navbar li {
+    padding: 5px;
+  }
+  .box {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  #nav-select {
+    visibility: visible;
+  }
+}
+
+/* For desktop: */
+.col-1 {width: 10%;}
+.col-2 {width: 15%;}
+.col-3 {width: 30%;}
+.col-4 {width: 30%;}
+.col-5 {width: 40%;}
+.col-6 {width: 50%;}
+.col-7 {width: 60%;}
+.col-8 {width: 70%;}
+.col-9 {width: 75%;}
+.col-10 {width: 85%;}
+.col-11 {width: 90%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 780px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
