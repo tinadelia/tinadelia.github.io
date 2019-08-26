@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Technical Analysis</title>
+                <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+        
+                <link rel="stylesheet" href="style.css">
+              </head>
+        
+<body>
+
+    
+        <div class="container-fluid">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="./index.html"><span class="World Bank GDP">World Bank GDP</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls=" navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+
+                        <div class="content">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-8">
+                                            <div class="box">
+                                                <div class="page-header">
+                                                    <h1 class="title">Technical Analysis</h1>
+                                                </div>
+                                                <div class="box">
+                                                    <img src="./Resources/technical.jpg" alt="GDP Top 10 Industry" height="480" width="880" alignment="left">
+                                                    <p class="category">  World Bank Technical Analysis
+                                                    </p>
+                                                    <p class="category"> Project ETL
+
+                                                        ----<br />
+                                                   
+                                            
+                                                        
+                                                        Our data set gathers information on the GPD, industry, health life expectancy <br />and happiness of the world's nations to see how they may interact with one another. <br /> 
+                                                        
+                                                        
+                                                        ----Dependencies<br />
+                                                        * psycopg2<br />
+                                                        * pandas<br />
+                                                        * sqlalchemy <br />
+                                                        * BeautifulSoup<br />
+                                                        * matplotlib<br />
+                                                        * requests<br />
+                                                        * os<br />
+                                                        * numpy<br />
+                                                        * pandas<br />
+                                                        * json<br />
+                                                        * ast<br />
+                                                        * pprint<br />
+                                                        
+                                                        ----<br />
+                                                        Data<br />
+                                                        
+                                                        This data pulls together 3 CSV datasets <br />
+                                                        Data Sources:<br />
+                                                        
+                                                        * [World GDP Statistics For 2017](https://www.kaggle.com/theworldbank/world-bank-gdp-ranking#gdp-csv-.csv) <br />
+                                                        
+                                                        * [World Happiness Statistics For 2017](https://www.kaggle.com/unsdsn/world-happiness)   <br />
+                                                        
+                                                        * [Countries of the world](https://www.kaggle.com/fernandol/countries-of-the-world)   <br />
+                                                        
+                                                        ----<br />
+                                                        Evaluation<br />
+                                                        
+                                                        The data is moved from the cvs files into panda’s data frames to evaluate and rename columns to be easier to work with. 
+                                                        Then using the sqlalchemy library, the dataframes are added to the gpd_db in the users postgres server.
+                                                        Inside postgres, the SQL queries run at step 2-b clean extra spaces in the countries names, merge, and create a new table which is used for the visualizations. 
+                                                        Through the use of matplotlib, the new tables are use to make the 9 visualizations shown in the ipymb file. (note only some of these visualizations have been chosen to appear on the html pages)
+                                                        
+                        
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+</body>
+</html>
